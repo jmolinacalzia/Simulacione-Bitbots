@@ -1,0 +1,33 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  title "Test Controllers"
+}
+Viewpoint {
+  orientation -0.0001639592913419535 -0.9324093367021508 -0.3614039318380555 3.1407466353177056
+  position 5.029913376934276 7.123349059993824 -5.811919489915998
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 45 45
+  floorTileSize 5 5
+  wallHeight 0.5
+}
+Pioneer3dx {
+  translation 2 0.0949936 0
+  rotation 0 1 0 3.13239
+  controller "Kalman_CTRL"
+  extensionSlot [
+    Camera {
+      translation 0 0.15 -0.175
+      recognition Recognition {
+      }
+    }
+    GPS {
+    }
+    Compass {
+    }
+  ]
+}
